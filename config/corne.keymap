@@ -31,7 +31,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        def {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -46,7 +46,7 @@
             >;
         };
 
-        raise_layer {
+        layer1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -61,7 +61,7 @@
             >;
         };
 
-        layer_2 {
+        layer2 {
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3          &kp F4           &kp F5        &kp C_BRI_UP          &kp K_UNDO  &kp UP       &kp K_REDO  &kp ESCAPE     &trans
 &trans  &kp F6   &kp F7   &kp F8          &kp F9           &kp F10       &kp C_BRIGHTNESS_DEC  &kp LEFT    &kp DOWN     &kp RIGHT   &kp PAGE_UP    &trans
@@ -70,7 +70,7 @@
             >;
         };
 
-        layer_3 {
+        layer3 {
             bindings = <
 &trans  &trans         &trans         &trans         &trans         &trans           &trans  &trans      &trans      &trans  &trans      &trans
 &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &trans  &bt BT_PRV  &bt BT_NXT  &trans  &bt BT_CLR  &trans
